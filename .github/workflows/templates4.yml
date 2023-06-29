@@ -52,11 +52,9 @@
       pull_request:
         branches:
           - main
-    
-     permissions:
-      contents: read
-    
-      jobs: 
+
+
+    jobs: 
       net-framework:
         name: Setup .NET Framework ${{ matrix.dotnet-framework }}
         runs-on: windows-latest
