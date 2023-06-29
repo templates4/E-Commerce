@@ -1,7 +1,7 @@
 
-![Auto Assign](https://github.com/Templates for E-Commerce/demo-repository/actions/workflows/auto-assign.yml/badge.svg)
+![Auto Assign](https://github.com/templates4/E-Commerce/actions/workflows/auto-assign.yml/badge.svg)
 
-![Proof HTML](https://github.com/Templates for E-Commerce/demo-repository/actions/workflows/proof-html.yml/badge.svg)
+![Proof HTML](https://github.com/templates4/E-Commerce/actions/workflows/proof-html.yml/badge.svg)
 
 # Welcome to E-Commerce Templates
 
