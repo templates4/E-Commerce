@@ -1,7 +1,11 @@
 
 ![Auto Assign](https://github.com/templates4/E-Commerce/actions/workflows/auto-assign.yml/badge.svg)
 
-![Proof HTML](https://github.com/templates4/E-Commerce/actions/workflows/proof-html.yml/badge.svg)
+![Static HTML](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
+
+![Cache](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
+
+![Templates4](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
 
 # Welcome to E-Commerce Templates
 
