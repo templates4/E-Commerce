@@ -1,0 +1,12 @@
+# Please refer https://aka.ms/HTTPSinContainer on how to setup an https developer certificate for your ASP.NET Core service.
+
+version: '3.4'
+
+services:
+  grandsharedkernel:
+    image: grandsharedkernel
+    build:
+      context: .
+      dockerfile: platforms/GrandNode/src/Core/Grand.SharedKernel/Dockerfile
+    ports:
+      - 7680:7680

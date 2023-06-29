@@ -1,0 +1,24 @@
+[submodule "Orchard"]
+	path = platforms/Orchard
+	url = https://github.com/templates4/Orchard
+[submodule "Kooboo"]
+	path = platforms/Kooboo
+	url = https://github.com/templates4/Kooboo
+[submodule "Piranha"]
+	path = platforms/Piranha
+	url = https://github.com/templates4/piranha
+[submodule "N2"]
+	path = platforms/N2
+	url = https://github.com/templates4/n2
+[submodule "VirtoCommerce"]
+	path = platforms/VirtoCommerce
+	url = https://github.com/templates4/VirtoCommerce
+[submodule "SmartStore"]
+	path = platforms/SmartStore
+	url = https://github.com/templates4/SmartStore
+[submodule "GrandNode"]
+	path = platforms/GrandNode
+	url = https://github.com/templates4/GrandNode
+[submodule "Umbraco"]
+	path = platforms/Umbraco
+	url = https://github.com/templates4/Umbraco

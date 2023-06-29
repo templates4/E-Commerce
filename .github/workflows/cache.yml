@@ -1,16 +1,22 @@
-name: Proof HTML
+name: Install .NET Core
+
 on:
   push:
-  workflow_dispatch:
+    branches:
+      - main
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  updateDNSandIssueCerts:
+    runs-on: windows-latest
+
     steps:
-      - name: Cache
-        uses: actions/cache@v1.2.1
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
-          # A directory to store and save the cache
-          path: release
-          # An explicit key for restoring and saving the cache
-          key: templates4-cache-key 
-          
+          fetch-depth: 6
+          submodules: true
+
+      - name: Setup .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 6.0.x
