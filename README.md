@@ -1,7 +1,6 @@
+# Welcome to E-Commerce Templates
 
 ![Auto Assign](https://github.com/templates4/E-Commerce/actions/workflows/auto-assign.yml/badge.svg) ![Static HTML](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg) ![Cache](https://github.com/templates4/E-Commerce/actions/workflows/cache.yml/badge.svg) ![Templates4](https://github.com/templates4/E-Commerce/actions/workflows/templates4.yml/badge.svg)
-
-# Welcome to E-Commerce Templates
 
 This code repository (or "repo") is designed to demonstrate the best GitHub has to offer with the least amount of noise.
 
