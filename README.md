@@ -10,6 +10,6 @@ The repo includes an `index.html` file (so it can render a web page), two GitHub
   mkdir -p ~/ec/templates4/modules
 
   cd ~/ec
-  echo "{\"sdk\": { \"version\": \"$(dotnet -v)\", "rollForward": "latestFeature"    }  }" > global.json
+  echo "{\"sdk\": { \"version\": \"$(dotnet -v)\", \"rollForward\": \"latestFeature\"    }  }" > global.json
 
 ```
