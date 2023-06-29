@@ -42,13 +42,42 @@
 #       with:
 #         cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-# name: 'Terraform'
 
-# on:
-#  push:
-#    branches: [ "main" ]
-#  pull_request:
-#  workflow_dispatch:
+    name: Test
+
+    on:
+      push:
+        branches:
+          - main
+      pull_request:
+        branches:
+          - main
+    
+     permissions:
+      contents: read
+    
+      jobs: 
+      net-framework:
+        name: Setup .NET Framework ${{ matrix.dotnet-framework }}
+        runs-on: windows-latest
+        strategy:
+          matrix:
+            dotnet-framework: [ '4.7.2', '4.8', '6.0.x','7.0.x','8.0.x']
+        steps:  
+          - name: Setup .NET Framework ${{ matrix.dotnet-framework }}
+            uses: actions/setup-dotnet@v1
+            with:
+              dotnet-version: ${{ matrix.dotnet-framework }}
+          - name: Install dependencies
+            run: nuget restore
+          - name: Build
+            run: msbuild /p:Configuration=Release
+          - name: Test
+            run: |
+              cd test
+              dotnet test --no-restore --verbosity normal   
+        
+        
 
 # permissions:
 #  contents: read
