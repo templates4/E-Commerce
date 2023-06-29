@@ -3,9 +3,9 @@
 
 ![Static HTML](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
 
-![Cache](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
+![Cache](https://github.com/templates4/E-Commerce/actions/workflows/cache.yml/badge.svg)
 
-![Templates4](https://github.com/templates4/E-Commerce/actions/workflows/static.yml/badge.svg)
+![Templates4](https://github.com/templates4/E-Commerce/actions/workflows/templates4.yml/badge.svg)
 
 # Welcome to E-Commerce Templates
 
