@@ -15,4 +15,4 @@ cd /Users/owner/Projects/E-Commerce/platforms
 # git submodule add --name SmartStore -- https://github.com/templates4/SmartStore ./SmartStore     
 # git submodule add --name GrandNode -- https://github.com/templates4/GrandNode ./GrandNode 
 # git submodule add --name Umbraco -- https://github.com/templates4/Umbraco ./Umbraco
-git submodule add --name SuperFlexiUI -- https://github.com/templates4/SuperFlexiUI ./SuperFlexiUI
+# git submodule add --name SuperFlexiUI -- https://github.com/templates4/SuperFlexiUI ./SuperFlexiUI
