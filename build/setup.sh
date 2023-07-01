@@ -147,15 +147,15 @@ then
 
         # Is the current IP address different from the one in the DNS record?
         if [ "$IP4_TEMPLATE_URL" != "$GD_IP4" ]; then
-            echo "Updating A record for $folderName.fronts.cloud"
-            curl -s -X PUT "https://api.godaddy.com/v1/domains/fronts.cloud/records/A/$folderName" \
+            echo "Updating A record for $folderName.$GD_DOMAIN"
+            curl -s -X PUT "https://api.godaddy.com/v1/domains/$GD_DOMAIN/records/A/$folderName" \
                 -H "accept: application/json" \
                 -H "Content-Type: application/json" \
                 -H "X-Shopper: $GD_CUST_ID" \
                 -H "Authorization: sso-key $GD_SSO_VAR:$GD_SSO_KEY" \
                 -d "[ { \"data\": \"$IP4_TEMPLATE_URL\", \"port\": 80, \"priority\": 0, \"protocol\": \"http\", \"service\": \"\", \"ttl\": 600, \"weight\": 0   } ]"
         else
-            echo "A record for $folderName.fronts.cloud is already up to date"
+            echo "A record for $folderName.$GD_DOMAIN is already up to date"
         fi
 
         GD_IP6=$(curl -s -X GET -H "X-Shopper: $GD_CUST_ID" \
