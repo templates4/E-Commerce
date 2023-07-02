@@ -22,9 +22,6 @@
 [submodule "Umbraco"]
 	path = platforms/Umbraco
 	url = https://github.com/templates4/Umbraco
-[submodule "Umbraco.UI"]
-	path = platforms/Umbraco/src/Umbraco.Web.UI.New.Client
-	url = https://github.com/templates4/Umbraco.UI
 [submodule "SuperFlexiUI"]
 	path = platforms/SuperFlexiUI
 	url = https://github.com/templates4/SuperFlexiUI
