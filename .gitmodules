@@ -19,9 +19,6 @@
 [submodule "GrandNode"]
 	path = platforms/GrandNode
 	url = https://github.com/templates4/GrandNode
-[submodule "Umbraco"]
-	path = platforms/Umbraco
-	url = https://github.com/templates4/Umbraco
 [submodule "SuperFlexiUI"]
 	path = platforms/SuperFlexiUI
 	url = https://github.com/templates4/SuperFlexiUI
