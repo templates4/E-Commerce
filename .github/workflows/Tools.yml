@@ -1,0 +1,28 @@
+name: Build with Dotnet
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: windows-2019
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: | 
+            2.1.x
+            3.1.x
+            6.0.x
+            7.0.x
+            8.0.x
+
+      - name: Build all solutions
+        run: |
+          find . -name "*.sln" -type f -print0 | while IFS= read -r -d '' file; do
+            echo "Building $file"
+            dotnet build "$file" --configuration Release
+          done

@@ -25,3 +25,9 @@
 [submodule "Nop"]
 	path = platforms/Nop
 	url = https://github.com/templates4/Nop
+[submodule "Prose"]
+	path = tools/Prose
+	url = https://github.com/microsoft/prose
+[submodule "Yarp"]
+	path = tools/Yarp
+	url = https://github.com/microsoft/reverse-proxy
