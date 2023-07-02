@@ -1,4 +1,4 @@
-name: Build Nop Platform
+name: Build VirtoCommerce Platform
 
 on: [workflow_dispatch]
 
@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/Nop/src/NopCommerce.sln
-      Test_Project_Path: platforms/Nop/src/Tests/Nop.Tests/Nop.Tests.csproj   
+      Solution_Name: platforms/VirtoCommerce/VirtoCommerce.Platform.sln
+      Test_Project_Path: platforms/VirtoCommerce/tests/VirtoCommerce.Platform.Core.Tests/VirtoCommerce.Platform.Core.Tests.csproj   
       
     steps:
     - name: Checkout Code

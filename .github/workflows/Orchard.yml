@@ -1,6 +1,6 @@
-name: Build Umbraco Platform
+name: Build Orchard Platform
 
-on: [push, pull_request, workflow_dispatch]
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/Umbraco/umbraco.sln
-      Test_Project_Path: platforms/Umbraco/tests/Umbraco.Tests.Common/Umbraco.Tests.Common.csproj
+      Solution_Name: platforms/Orchard/OrchardCore.sln
+      Test_Project_Path: platforms/Orchard/test/OrchardCore.Tests/OrchardCore.Tests.csproj
       
     steps:
     - name: Checkout Code
@@ -37,7 +37,7 @@ jobs:
 
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
-      uses: microsoft/setup-msbuild@v1.0.2
+      uses: microsoft/setup-msbuild@v1.1
 
     # Restore the application to populate the obj folder with RuntimeIdentifiers
     - name: Restore the application

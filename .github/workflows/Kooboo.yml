@@ -1,4 +1,4 @@
-name: Build Nop Platform
+name: Build Kooboo Platform
 
 on: [workflow_dispatch]
 
@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/Nop/src/NopCommerce.sln
-      Test_Project_Path: platforms/Nop/src/Tests/Nop.Tests/Nop.Tests.csproj   
+      Solution_Name: platforms/Kooboo/Kooboo.sln
+      Test_Project_Path: platforms/Kooboo/Kooboo.Test/Kooboo.Test.csproj    
       
     steps:
     - name: Checkout Code

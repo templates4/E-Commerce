@@ -1,4 +1,4 @@
-name: Build Nop Platform
+name: Build N2 Platform
 
 on: [workflow_dispatch]
 
@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/Nop/src/NopCommerce.sln
-      Test_Project_Path: platforms/Nop/src/Tests/Nop.Tests/Nop.Tests.csproj   
+      Solution_Name: platforms/N2/N2.Everything.sln
+      Test_Project_Path: platforms/N2/src/Framework/Tests/N2.Tests.csproj
       
     steps:
     - name: Checkout Code
