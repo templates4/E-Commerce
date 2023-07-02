@@ -1,6 +1,6 @@
 # Welcome to E-Commerce Templates
 
-[![Grand](https://github.com/templates4/e-commerce/workflows/Grand/badge.svg)](https://github.com/templates4/e-commerce/actions/workflows/Grand.yml)
+[![Grand](https://github.com/templates4/e-commerce/actions/Grand.yml/badge.svg)](https://github.com/templates4/e-commerce/actions/workflows/Grand.yml)
 [![Kooboo](https://github.com/templates4/e-commerce/workflows/Kooboo/badge.svg)](https://github.com/templates4/e-commerce/actions/workflows/Kooboo.yml)
 [![N2](https://github.com/templates4/e-commerce/workflows/N2/badge.svg)](https://github.com/templates4/e-commerce/actions/workflows/N2.yml)
 [![Nop](https://github.com/templates4/e-commerce/workflows/Nop/badge.svg)](https://github.com/templates4/e-commerce/actions/workflows/Nop.yml)
