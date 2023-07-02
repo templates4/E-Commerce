@@ -22,7 +22,7 @@ jobs:
       run: |
         cd ${{ github.workspace }}
         git submodule sync
-        git submodule update --init --recursive --depth=2
+        git submodule update --init --recursive --depth=1
     
     - name: Setup node
       uses: actions/setup-node@v3

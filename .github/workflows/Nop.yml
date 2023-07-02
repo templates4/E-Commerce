@@ -11,8 +11,8 @@ jobs:
     runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/SmartStore/Smartstore.sln
-      Test_Project_Path: platforms/SmartStore/test/Smartstore.Core.Tests/Smartstore.Core.Tests.csproj    
+      Solution_Name: platforms/Nop/src/NopCommerce.sln
+      Test_Project_Path: platforms/Nop/src/Tests/Nop.Tests/Nop.Tests.csproj   
       
     steps:
     - name: Checkout Code
@@ -22,7 +22,7 @@ jobs:
       run: |
         cd ${{ github.workspace }}
         git submodule sync
-        git submodule update --init --recursive --depth=2
+        git submodule update --init --recursive --depth=1
     
     - name: Setup node
       uses: actions/setup-node@v3
