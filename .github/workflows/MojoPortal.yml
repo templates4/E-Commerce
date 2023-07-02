@@ -1,0 +1,53 @@
+name: MojoPortal
+
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: platforms/SuperFlexiUI/mojoportal-core.sln
+      Test_Project_Path: platforms/Kooboo/SuperFlexiUI.Test/SuperFlexiUI.Test.csproj    
+      
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    
+    - name: Checkout Submodules
+      run: |
+        cd ${{ github.workspace }}
+        git submodule sync
+        git submodule update --init --recursive --depth=1
+    
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+        cache: 'npm'
+    
+    # Install the .NET Core workload
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: |
+          2.1.x
+          3.1.x
+          5.0.x
+          6.0.x
+          7.0.x
+          8.0.x
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    # Restore the application to populate the obj folder with RuntimeIdentifiers
+    - name: Restore the application
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}
