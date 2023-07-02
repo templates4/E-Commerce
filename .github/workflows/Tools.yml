@@ -2,13 +2,27 @@ name: Build with Dotnet
 
 on: [workflow_dispatch]
 
+permissions:
+  contents: write
+  packages: write  
+  deployments: write
+
+defaults:
+  run:
+    shell: pwsh
+
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: windows-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
 
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v3
@@ -22,7 +36,16 @@ jobs:
 
       - name: Build all solutions
         run: |
-          find . -name "*.sln" -type f -print0 | while IFS= read -r -d '' file; do
-            echo "Building $file"
-            dotnet build "$file" --configuration Release
-          done
+          # Set the root directory to search for .sln files
+          $rootDirectory = $env:GITHUB_WORKSPACE
+        
+          # Get all .sln files recursively
+          $slnFiles = Get-ChildItem -Path $rootDirectory -Filter "*.sln" -File -Recurse
+          
+          # Loop through each .sln file and call dotnet build
+          foreach ($slnFile in $slnFiles) {
+              Write-Host "Building $($slnFile.FullName)"
+              cd $slnFile.Directory.FullName
+              dotnet build
+          }
+        
