@@ -1,4 +1,4 @@
-name: Build VirtoCommerce Platform
+name: VirtoCommerce
 
 on: [workflow_dispatch]
 

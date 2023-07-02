@@ -1,4 +1,4 @@
-name: Build Nop Platform
+name: Nop
 
 on: [workflow_dispatch]
 

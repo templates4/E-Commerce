@@ -1,4 +1,4 @@
-name: Build Kooboo Platform
+name: Kooboo
 
 on: [workflow_dispatch]
 

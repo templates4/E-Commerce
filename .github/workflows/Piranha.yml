@@ -1,4 +1,4 @@
-name: Build Piranha Platform
+name: Piranha
 
 on: [workflow_dispatch]
 

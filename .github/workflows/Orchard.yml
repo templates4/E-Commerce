@@ -1,4 +1,4 @@
-name: Build Orchard Platform
+name: Orchard
 
 on: [workflow_dispatch]
 

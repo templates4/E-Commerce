@@ -1,4 +1,4 @@
-name: Build N2 Platform
+name: N2
 
 on: [workflow_dispatch]
 

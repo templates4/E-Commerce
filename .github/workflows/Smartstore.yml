@@ -1,4 +1,4 @@
-name: Build Smartstore Platform
+name: Smartstore
 
 on: [workflow_dispatch]
 
