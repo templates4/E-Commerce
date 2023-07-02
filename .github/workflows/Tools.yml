@@ -25,6 +25,12 @@ jobs:
           node-version: 18
           cache: 'npm'
 
+      - name: Checkout submodules
+        run: |
+          cd ${{ github.workspace }}
+          git submodule sync
+          git submodule update --init --recursive --depth=1
+
       - name: Set up .NET Core
         uses: actions/setup-dotnet@v3
         with:
