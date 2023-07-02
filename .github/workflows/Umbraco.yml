@@ -1,0 +1,47 @@
+name: Build Umbraco Platform
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    runs-on: windows-latest
+
+    env:
+      Solution_Name: platforms/Umbraco/umbraco.sln
+      Test_Project_Path: platforms/Umbraco/tests/Umbraco.Tests.Common/Umbraco.Tests.Common.csproj
+      
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    
+    - name: Checkout Submodules
+      shell: bash
+      run: |
+        cd ${{ github.workspace }}
+        git submodule sync
+        git submodule update --init --recursive --depth=2
+    
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: '12.x' 
+    
+    # Install the .NET Core workload
+    - name: Install .NET Core
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+
+    # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
+    - name: Setup MSBuild.exe
+      uses: microsoft/setup-msbuild@v1.0.2
+
+    # Restore the application to populate the obj folder with RuntimeIdentifiers
+    - name: Restore the application
+      run: msbuild $env:Solution_Name /t:Restore /p:Configuration=$env:Configuration
+      env:
+        Configuration: ${{ matrix.configuration }}

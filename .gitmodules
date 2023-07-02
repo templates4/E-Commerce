@@ -25,3 +25,6 @@
 [submodule "SuperFlexiUI"]
 	path = platforms/SuperFlexiUI
 	url = https://github.com/templates4/SuperFlexiUI
+[submodule "Nop"]
+	path = platforms/Nop
+	url = https://github.com/templates4/Nop

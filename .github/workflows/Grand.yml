@@ -1,4 +1,4 @@
-name: Build Platforms
+name: Build Grand Platform
 
 on: [push, pull_request, workflow_dispatch]
 
@@ -8,11 +8,11 @@ jobs:
       matrix:
         configuration: [Debug, Release]
 
-    runs-on: windows-latest 
+    runs-on: windows-latest
 
     env:
-      Solution_Name: platforms/SmartStore/Smartstore.sln
-      Test_Project_Path: platforms/SmartStore/test/Smartstore.Core.Tests/Smartstore.Core.Tests.csproj    
+      Solution_Name: platforms/GrandNode/GrandNode.sln
+      Test_Project_Path: platforms/GrandNode/src/Tests/Grand.Business.Common.Tests/Grand.Business.Common.Tests.csproj
       
     steps:
     - name: Checkout Code
