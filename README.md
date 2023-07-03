@@ -1,4 +1,4 @@
-# E-Commerce Platforms -4- dotnet
+# dotnet template e-commerce
 [![Grand](https://github.com/templates4/E-Commerce/actions/workflows/Grand.yml/badge.svg)](https://github.com/templates4/E-Commerce/actions/workflows/Grand.yml)
 [![Kooboo](https://github.com/templates4/E-Commerce/actions/workflows/Kooboo.yml/badge.svg)](https://github.com/templates4/E-Commerce/actions/workflows/Kooboo.yml)
 [![N2](https://github.com/templates4/E-Commerce/actions/workflows/N2.yml/badge.svg)](https://github.com/templates4/E-Commerce/actions/workflows/N2.yml)
