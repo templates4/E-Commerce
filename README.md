@@ -17,12 +17,12 @@ For comprehensive documentation and step-by-step tutorials, please refer to the 
 ## Demos  
 
 The demos are available via Scott Weeden's k8s cluster through a [yarp reverse proxy](https://github.com/microsoft/reverse-proxy), and a template is available for download on the Visual Studio marketplace as "Cloudfront E-Commerce":
-  1. http://store.fronts.cloud/nop        -- NopCommerce Template
-  2. http://store.fronts.cloud/virto      -- Virto Commerce Template
-  3. http://store.fronts.cloud/smart      -- SmartStore Template
-  4. http://store.fronts.cloud/grand      -- Grand2 Template
-  5. http://store.fronts.cloud/composite  -- Composite Template
-  6. http://store.fronts.cloud/Umbraco    -- Umbraco Template
+  1. http://harbor.fronts.cloud/nop        -- NopCommerce Template
+  2. http://harbor.fronts.cloud/virto      -- Virto Commerce Template
+  3. http://harbor.fronts.cloud/smart      -- SmartStore Template
+  4. http://harbor.fronts.cloud/grand      -- Grand2 Template
+  5. http://harbor.fronts.cloud/composite  -- Composite Template
+  6. http://harbor.fronts.cloud/Umbraco    -- Umbraco Template
 
 ## Premium Support
 
