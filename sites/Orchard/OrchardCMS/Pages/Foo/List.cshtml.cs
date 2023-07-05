@@ -9,6 +9,8 @@ using OrchardCore.DisplayManagement;
 using OrchardCore.DisplayManagement.ModelBinding;
 using OrchardCore.Modules;
 using YesSql;
+using ISession = YesSql.ISession;
+using ISession = YesSql.ISession;
 
 namespace OrchardCMS.Pages
 {

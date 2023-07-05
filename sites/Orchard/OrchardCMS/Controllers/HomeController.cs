@@ -11,6 +11,7 @@ using OrchardCore.DisplayManagement;
 using OrchardCore.Environment.Cache;
 using OrchardCore.Environment.Shell.Scope;
 using YesSql;
+using ISession = YesSql.ISession;
 
 namespace OrchardCMS.Controllers
 {

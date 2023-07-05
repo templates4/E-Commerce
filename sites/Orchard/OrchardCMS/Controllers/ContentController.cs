@@ -8,6 +8,7 @@ using OrchardCore.Contents;
 using OrchardCore.DisplayManagement.ModelBinding;
 using YesSql;
 using IHttpContextAccessor = Microsoft.AspNetCore.Http.IHttpContextAccessor;
+using ISession = YesSql.ISession;
 
 namespace OrchardCMS.Controllers
 {

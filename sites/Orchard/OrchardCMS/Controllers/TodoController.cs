@@ -1,9 +1,11 @@
 using System.Linq;
 using System.Threading.Tasks;
+using DurableTask.Core.Common;
 using Microsoft.AspNetCore.Mvc;
 using OrchardCMS.Models;
 using OrchardCMS.ViewModels;
 using YesSql;
+using ISession = YesSql.ISession;
 
 namespace OrchardCMS.Controllers
 {

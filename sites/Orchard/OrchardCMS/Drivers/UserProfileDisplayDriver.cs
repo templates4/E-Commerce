@@ -7,6 +7,7 @@ using OrchardCMS.ViewModels;
 using OrchardCore.DisplayManagement.Entities;
 using OrchardCore.DisplayManagement.Handlers;
 using OrchardCore.DisplayManagement.Views;
+using OrchardCore.Users.Models;
 
 namespace OrchardCMS.Drivers
 {

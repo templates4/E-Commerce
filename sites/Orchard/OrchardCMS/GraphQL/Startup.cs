@@ -3,6 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using OrchardCore.ContentManagement.GraphQL.Options;
 using OrchardCMS.Models;
 using OrchardCore.Modules;
+using StartupBase = OrchardCore.Modules.StartupBase;
 
 namespace OrchardCMS.GraphQL
 {
