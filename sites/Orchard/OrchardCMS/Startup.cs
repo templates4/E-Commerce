@@ -100,6 +100,14 @@ namespace OrchardCMS
 
             services.AddScoped<IDisplayDriver<User>, UserProfileDisplayDriver>();
 
+		// TYE - NEW CODE!!!
+		services.AddRazorPages();
+		/** Add the following to wire the client to the backend **/
+		services.AddHttpClient<WeatherClient>(client =>
+		{
+		         client.BaseAddress = builder.Configuration.GetServiceUri("backend");
+		});
+
             services.Configure<RazorPagesOptions>(options =>
             {
                 // Add a custom page folder route (only applied to non admin pages)
