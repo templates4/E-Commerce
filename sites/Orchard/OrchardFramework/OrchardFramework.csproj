@@ -1,0 +1,54 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.8" />
+    <PackageReference Include="OrchardCore.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Admin.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.AdminMenu.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Apis.GraphQL.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.AuditTrail.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.ContentLocalization.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.ContentPreview.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.ContentTypes.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Data.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Data.YesSql.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Deployment.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.DisplayManagement.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.DynamicCache.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Email.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Feeds.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.FileStorage.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Indexing.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Infrastructure.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Liquid.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Localization.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Markdown.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Media.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.MetaWeblog.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Notifications.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Queries.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Recipes.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Redis.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.ResourceManagement.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Rules.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Search.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Search.Elasticsearch.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Search.Lucene.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Seo.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Setup.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Shortcodes.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Sitemaps.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Users.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.Workflows.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="OrchardCore.XmlRpc.Abstractions" Version="1.7.0-preview-17488" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+</Project>

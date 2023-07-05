@@ -2,3 +2,10 @@
 .vscode
 /platforms/.DS_Store
 platforms/.DS_Store
+.vscode/launch.json
+.vscode/tasks.json
+obj
+bin
+.vscode/launch.json
+.vscode/tasks.json
+/.vs
