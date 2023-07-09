@@ -10,3 +10,4 @@ bin
 .vscode/tasks.json
 /.vs
 node_modules
+/sites/Nop/frontend/.vs

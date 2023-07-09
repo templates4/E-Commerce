@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "tailwindcss@2.2.16", // Replace with your desired version
+      "destination": "wwwroot/lib/tailwindcss/"
+    },
+    {
+      "library": "font-awesome@5.15.3", // Replace with your desired version
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "jquery@3.6.0", // Replace with your desired version
+      "destination": "wwwroot/lib/jquery/"
+    },
+    {
+      "destination": "wwwroot/lib/jqueryui/",
+      "library": "jqueryui@1.13.2" // Replace with your desired version
+    },
+    {
+      "library": "Chart.js@4.3.0", // Replace with your desired version
+      "destination": "wwwroot/lib/chart.js/"
+    }
+  ]
+}
