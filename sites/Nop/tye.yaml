@@ -1,0 +1,31 @@
+name: my-app
+services:
+  - name: nopcommerce_web
+    project: ./src/Presentation/Nop.Web/Nop.Web.csproj
+    bindings:
+      - port: 8010
+        protocol: http
+    replicas: 1
+    env:
+      - name: ASPNETCORE_ENVIRONMENT
+        value: Production
+    dependsOn:
+      - nopcommerce_database
+
+  - name: nopcommerce_database
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    env:
+      - name: SA_PASSWORD
+        value: nopCommerce_db_password
+      - name: ACCEPT_EULA
+        value: Y
+      - name: MSSQL_PID
+        value: Express
+    replicas: 1
+    volumeMounts:
+      - name: nopcommerce_data
+        mountPath: /var/opt/mssql
+
+volumes:
+  - name: nopcommerce_data
+
