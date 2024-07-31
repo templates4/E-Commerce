@@ -1,4 +1,4 @@
-# dotnet e-commerce https://app.codegpt.co/chat/share/0a919a37-415b-4142-96fb-d2fe6cfde796/?pincode=jtp9pu
+# dotnet e-commerce sites
 
 
 ![Grand](https://github.com/templates4/E-Commerce/actions/workflows/Grand.yml/badge.svg)](https://github.com/templates4/E-Commerce/actions/workflows/Grand.yml)
